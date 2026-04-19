@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+MANIFEST
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# Type checkers
+.mypy_cache/
+.pytype/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Project-specific
+# (*.wav and *.spec.png are handled globally above; pocs/*.spec.png re-included below)
+
+# Internal design documents
+murmur-prompt.md
+
+# Default and user-generated outputs (prevent accidental commits during local testing)
+spectrogram.png
+decoded.png
+*.spec.png
+*.wav
+# Re-include the POC spectrograms committed for the README
+!pocs/*.spec.png
