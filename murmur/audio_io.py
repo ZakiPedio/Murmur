@@ -118,6 +118,7 @@ def write_audio(path: str, samples: np.ndarray, sample_rate: int = 44100) -> Non
             available.
     """
     dst = Path(path)
+    dst.parent.mkdir(parents=True, exist_ok=True)
 
     if dst.suffix.lower() == ".wav":
         logger.debug("write_audio: writing WAV directly: %s", path)
